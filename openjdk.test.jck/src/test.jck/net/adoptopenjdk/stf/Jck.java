@@ -367,7 +367,7 @@ public class Jck implements StfPluginInterface {
 			StfProcess tnameserv = null;
 			String executeJar = "/lib/javatest.jar";
 			
-			if ( (testSuite == TestSuite.RUNTIME) && (tests.contains("api/java_util") || tests.contains("api/java_net") || tests.contains("api/java_rmi")  || tests.contains("api/javax_management") 
+			if ( (testSuite == TestSuite.RUNTIME) && (tests.contains("api/java_util") || (tests.contains("api/javax_xml") || tests.contains("api/java_net") || tests.contains("api/java_rmi")  || tests.contains("api/javax_management") 
 					|| tests.contains("api/org_omg") || tests.contains("api/javax_xml") || tests.equals("api") || tests.contains("vm/jdwp") || tests.equals("vm")) ) {
 				String addModules = "";
 				// JCK 9/10 javatest agents need to be given access to non default modules.
